@@ -1,0 +1,40 @@
+.header {
+	margin-top: 1%;
+}
+
+#to-left {
+	float: left;
+}
+
+#to-right {
+	float: right;
+	margin-left: 2%;
+}
+
+hr {
+	margin-top: 50px;
+}
+
+.block {
+	margin-bottom: 25px;
+}
+
+.block {
+	margin-top: 50px;
+}
+
+.titulo {
+	cursor: pointer;
+}
+
+.comment_area {
+	margin-top: 10px;
+}
+
+#footer {
+	bottom: 0;
+}
+
+.resaltar {
+	background-color: #FF0;
+}

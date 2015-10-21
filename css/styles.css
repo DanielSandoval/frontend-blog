@@ -12,15 +12,23 @@
 }
 
 hr {
-	margin-top: 50px;
+	margin-top: 45px;
 }
 
 .block {
 	margin-bottom: 25px;
 }
 
-.block {
-	margin-top: 50px;
+.block div h1{
+	font-size: 38px;
+}
+
+.block div p {
+	font-size: 17px;
+}
+
+.content_for_search {
+	margin-top: 30px;
 }
 
 .titulo {
@@ -29,10 +37,6 @@ hr {
 
 .comment_area {
 	margin-top: 10px;
-}
-
-#footer {
-	bottom: 0;
 }
 
 .resaltar {

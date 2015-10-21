@@ -1,8 +1,4 @@
 // Javascript Code.
-$.expr[':'].icontains = function(obj, index, meta, stack){
-	return (obj.textContent || obj.innerText || jQuery(obj).text() || '').toLowerCase().indexOf(meta[3].toLowerCase()) >= 0;
-};
-
 $(document).ready(function () {
   // $.get("_posts/2014-11-09.json", function(data){
   //
@@ -13,6 +9,28 @@ $(document).ready(function () {
 
   $(this).load("_posts/posts.json", function(data){
     var posts = JSON.parse(data);
+
+    order_date(posts["posts"]);
+
+    function order_date(myArray){
+		var size = myArray.length;
+
+		for(var pass = 1; pass < size; pass++){ // outer loop
+			for( var up = 0; up < (size - pass); up++){ // inner loop
+				var down = up + 1;
+				if(myArray[up]['date'] > myArray[down]['date']){
+					swap(myArray, up, down);
+				}
+			}
+		}
+	}
+
+	function swap(myArray, indexOne, indexTwo) {
+		var tmpVal = myArray[indexOne];
+		myArray[indexOne] = myArray[indexTwo];
+		myArray[indexTwo] = tmpVal;
+	}
+
     $("#titulo_1").html(posts['posts'][0]['title']);
     $(".parrafo_1").html(posts['posts'][0]['content']);
     $(".fecha_1").html(posts['posts'][0]['date']);

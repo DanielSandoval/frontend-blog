@@ -26,12 +26,12 @@ $(document).ready(function () {
       }
     }
 
-	function swap(myArray, indexOne, indexTwo) {
-    //This changes the order of the posts
-		var tmpVal = myArray[indexOne];
-		myArray[indexOne] = myArray[indexTwo];
-		myArray[indexTwo] = tmpVal;
-	}
+    function swap(myArray, indexOne, indexTwo) {
+      //This changes the order of the posts
+      var tmpVal = myArray[indexOne];
+      myArray[indexOne] = myArray[indexTwo];
+      myArray[indexTwo] = tmpVal;
+    }
 
     //Here we add the information to the posts in HTML
     $("#titulo_1").html(posts['posts'][0]['title']);

@@ -18,8 +18,8 @@ $(document).ready(function () {
 
       for(var pass = 1; pass < size; pass++){ // outer loop
         for( var up = 0; up < (size - pass); up++){ // inner loop
-				  var down = up + 1;
-				  if(myArray[up]['date'] < myArray[down]['date']){
+          var down = up + 1;
+          if(myArray[up]['date'] < myArray[down]['date']){
             swap(myArray, down, up);
 				  }
         }

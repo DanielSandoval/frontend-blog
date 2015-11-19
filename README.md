@@ -75,3 +75,7 @@ link that can be found on the Github page of your project. Follow the instructio
 ## 6. Retroalimentation 
 
 Now you have to look at your buddies code and leave your comments. Get on one of your buddies project and make 3 suggestions to they code using **Issues**.
+
+##You can see my page here
+
+http://danielsandoval.github.io/frontend-blog.
